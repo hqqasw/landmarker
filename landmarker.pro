@@ -25,13 +25,13 @@ HEADERS  += \
 
 FORMS    += mainwindow.ui
 
-OPENCV = D:/opencv3/build
+OPENCV = E:/opencv3/build
 CONFIG(debug,debug|release): LIBS += -L$$OPENCV/x64/vc12/lib/ -lopencv_world300d
 CONFIG(release,debug|release): LIBS += -L$$OPENCV/x64/vc12/lib/ -lopencv_world300
 INCLUDEPATH += $$OPENCV/include
 DEPENDPATH += $$OPENCV/include
 
-SDK = D:/sensetime
+SDK = E:/sensetime_SDK
 LIBS += -L$$SDK/windows/x64/ -lfacesdk
 INCLUDEPATH += $$SDK/include
 DEPENDPATH += $$SDK/include
